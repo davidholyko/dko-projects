@@ -1,0 +1,20 @@
+.img {
+  width: 25%;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    z-index: 1;
+    transform: scale(1.1);
+  }
+}
+
+.tooltip-inner {
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+  padding: 1rem;
+  font-size: 1rem;
+  min-width: 500px;
+  min-height: 300px;
+  max-width: 800px;
+}

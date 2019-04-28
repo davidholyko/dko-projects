@@ -13,9 +13,7 @@ import resume from '../../images/resume.png'
 import portfolio0 from '../../images/portfolio0.png'
 import portfolio from '../../images/portfolio.png'
 
-export const projectsData = 'sample data'
-
-export const projectsDataTEMP = [
+export const projectsData = [
   { name: 'NFL Stats',
     deployed: 'https://nfl-stats-davidko.herokuapp.com',
     repo: 'https://github.com/davidholyko/NFLstats',
@@ -28,7 +26,7 @@ export const projectsDataTEMP = [
     deployed: 'https://smitechart.herokuapp.com',
     repo: 'https://github.com/davidholyko/SmiteChart',
     image: smitechart,
-    description: 'First big project',
+    description: 'Personal Project to help quantify character strengths',
     goal: 'Visualize strengths of each character to help team in Picks and Bans phase for scrims',
     status: 'No longer maintaining'
   },
