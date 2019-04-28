@@ -5,14 +5,11 @@ import Tooltip from 'react-bootstrap/Tooltip'
 class Project extends Component {
   render () {
     const { name, deployed, repo, image, description, goal, status } = this.props.project
-
-    // <a href={deployed} target="_blank" rel="noopener noreferrer">
-    //   <img className="img" src={image} alt=""/>
-    // </a>
+    const { toggleLink } = this.props
 
     return (
       <OverlayTrigger
-        placement='auto'
+        placement='top'
         overlay={
           <Tooltip id={`tooltip-${this.props.project.name}`}>
             <h1 className="text-center">{name}</h1>
@@ -24,10 +21,11 @@ class Project extends Component {
           </Tooltip>
         }
       >
-
-        <a href={deployed} target="_blank" rel="noopener noreferrer">
-          <img className="img" src={image} alt=""/>
-        </a>
+        <div className="card">
+          <a className="link" href={toggleLink ? deployed : repo} target="_blank" rel="noopener noreferrer">
+            <img className="img" src={image} alt=""/>
+          </a>
+        </div>
 
       </OverlayTrigger>
     )
