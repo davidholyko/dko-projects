@@ -10,6 +10,7 @@ class Project extends Component {
     return (
       <OverlayTrigger
         placement='top'
+        trigger="hover"
         overlay={
           <Tooltip id={`tooltip-${this.props.project.name}`}>
             <h1 className="text-center">{name}</h1>

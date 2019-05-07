@@ -17,13 +17,13 @@ class Projects extends Component {
     const { toggleLink } = this.state
 
     const linkRepo = <button className="btn btn-info" onClick={this.handleToggle}>Links are set to Github Repositories</button>
-    const linkDeploy = <button className="btn btn-success" onClick={this.handleToggle}>Link are set to Live Deployments</button>
+    const linkDeploy = <button className="btn btn-success" onClick={this.handleToggle}>Links are set to Live Deployments</button>
 
     return (
       <Fragment>
         <h1 className="bg-dark text-light text-center">Projects</h1>
         <div className="text-center">{toggleLink ? linkDeploy : linkRepo}</div>
-        <h5 className="text-center my-3">Applications deployed on Heroku may take upto 10 seconds to load. Full Stack use Heroku for backend and wake up the server on load.</h5>
+        <h5 className="text-center my-3">Applications deployed on Heroku may take upto 10 seconds to load. Full Stack Applications use Heroku for backend and wake up the server on load.</h5>
         <div className="projects">
           {projectsData.map((project, index) => <Project key={project + index} project={project} toggleLink={toggleLink}/>)}
         </div>
