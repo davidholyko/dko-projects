@@ -63,8 +63,8 @@ export const projectsData = [
     status: 'Completed. No longer maintaining'
   },
   { name: 'StackOverKo',
-    deployed: 'https://davidholyko.github.io/stackoverko-client',
-    repo: 'https://github.com/davidholyko/stackoverko-client',
+    deployed: 'https://davidholyko.github.io/dko-stackoverko-client',
+    repo: 'https://github.com/davidholyko/dko-stackoverko-client',
     image: stackoverko,
     description: 'General Assembly Capstone Project (4)',
     goal: 'Practice React.js, importing Components from other libraries',
