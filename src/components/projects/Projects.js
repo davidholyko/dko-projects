@@ -16,8 +16,8 @@ class Projects extends Component {
   render () {
     const { toggleLink } = this.state
 
-    const linkRepo = <button className="btn btn-info" onClick={this.handleToggle}>Links are set to Github Repositories</button>
-    const linkDeploy = <button className="btn btn-success" onClick={this.handleToggle}>Links are set to Live Deployments</button>
+    const linkRepo = <button className="btn btn-lg btn-info" onClick={this.handleToggle}>Links are set to Github Repositories</button>
+    const linkDeploy = <button className="btn btn-lg btn-success" onClick={this.handleToggle}>Links are set to Live Deployments</button>
 
     return (
       <Fragment>
